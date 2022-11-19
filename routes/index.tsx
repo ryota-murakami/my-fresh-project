@@ -1,4 +1,4 @@
-import { useEffect } from "preact/hooks"
+import { useEffect } from "preact/hooks";
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 

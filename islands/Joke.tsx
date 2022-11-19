@@ -1,16 +1,15 @@
-import {useState, useEffect} from "preact/hooks"
-
+import { useEffect, useState } from "preact/hooks";
 
 const Joke = () => {
-    const [joke, setJoke]= useState()
-    useEffect(() => {
-        console.log('useEffect')
-        fetch("/api/joke").then((response) => response.json()).then((data) => {
-          setJoke(data);
-        });
-      }, []);
+  const [joke, setJoke] = useState();
+  useEffect(() => {
+    console.log("useEffect");
+    fetch("/api/joke").then((response) => response.json()).then((data) => {
+      setJoke(data);
+    });
+  }, []);
 
-return <p>{joke ? joke : "loading..."}</p>
-}
+  return <p>{joke ? joke : "loading..."}</p>;
+};
 
-export default Joke
+export default Joke;
