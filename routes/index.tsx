@@ -1,3 +1,4 @@
+import { useEffect } from "preact/hooks"
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 
@@ -18,6 +19,7 @@ export default function Home() {
           ./routes/index.tsx file, and refresh.
         </p>
         <Counter start={3} />
+        <a href="/joke">joke</a>
       </div>
     </>
   );
